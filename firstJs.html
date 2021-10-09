@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Javascript is a Client-side scripting language
+    It is used to program web pages
+Javascript is usually embedded in html pages
+Javascript is case sensitive
+It was invented by Brendah Eich-->
+
+<!--Javascript can display data in 4 different ways
+1. inside an HTML element using .innerHTML
+2. inside an HTML page using document.write();
+3. inside an alert box or pop-up window using alert();
+4. inside the browser's console, using console.log();
+
+Also, to add javascript program into a webpage, you'll place it inside a script tag-<script></script>
+
+The script tag can either be in the head section or body section or body section of your page.-->
+
+<h1> Javascript can change html element</h1>
+<p id="change"> Javascript can change this element</p>
+<button type="button" onclick="document.getElementById('change').innerHTML='Javascript is Awesome!'" >Click me</button>
+
+<h1>JS can change html attribute</h1>
+<img src="images/006small.jpg" id="image" onclick="document.getElementById('image').src='images/locationlogo.png'">
+
+<h1>JS can change html attribute</h1>
+<img src="images/006small.jpg" id="femi" onmouseover="document.getElementById('femi').src='images/locationlogo.png'" onmouseout="document.getElementById('femi').src='images/006small.jpg'">
+
+<h1>JS can switch between images</h1>
+<button onclick="document.getElementById('switch').src='images/compimg.jpg'">Show Computer image
+</button>
+<img src="images/006small.jpg" id="switch">
+<button onclick="document.getElementById('switch').src='images/006small.jpg'">
+    Show Small Image
+</button>
+<!--Note-->
+<button onclick="document.getElementById('switch').innerHTML='This is an image'">
+    Show Text
+</button>
+<button onclick="document.getElementById('change').src='images/006small.jpg'">
+    Show Image
+</button>
+
+<p id="tobi"><h1>JS can also change the style of an element</h1></p>
+<button onclick="document.getElementById('tobi').style.fontSize='30px'">Change font-size</button>
+<button onclick="document.getElementById('tobi').style.color='red'">Change color</button>
+
+
+<script>
+    document.write("<br>");
+    document.write("<h1>Hello Class</h1>"); 
+    /* Assignment learn what it means*/
+    // console.log("Nifemi talks too much");
+    // console.log("We have Psquare in class");
+    // alert("Welcome to the best class!");
+    var name = prompt("Welcome, what is your name?");
+    document.write("Hello, "+name);
+    prompt("what is your name?")
+    document.write(30) // this is an integer (number)
+    document.write("independence Gbedu") //this is a string (text) 
+</script>
+</body>
+</html>
